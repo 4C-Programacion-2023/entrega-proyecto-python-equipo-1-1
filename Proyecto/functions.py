@@ -1,4 +1,4 @@
-import json, os, webbrowser, Menu, gym_fuctions, function_vip
+import json, os, webbrowser, Menu, gym_fuctions, function_vip, index
 from pathlib import Path
 '''
 NutriFit
@@ -13,28 +13,8 @@ def clear():
     else:
      os.system("clear")
 
-def add():
-    clear()
-    print('Estos son los datos actuales/cargados del usuario')
-    print(user)
-
-    print("Introduce tu edad:")
-    user['edad'] = int(input())
-
-    print("Introduce tu peso actual en KG:")
-    user['peso_actual'] = float(input())
-
-    print("Introduce tu medida en CM: (Ej: 170)")
-    user['medida'] = float(input())
-
-    print("Introduce tu sexo: (F (Femenino) o M (Masculino))")
-    user['genero'] = str(input())
-
-    with open ('Proyecto/user.json', 'w') as f:
-        json.dump(user, f, indent = 4, sort_keys= True)
-    return 
-
 def al_recom():
+    clear()
     try:
         with open('Proyecto/user.json') as f:
             data = json.load(f)
@@ -220,15 +200,6 @@ def musica_menu():
             Menu.menu()
         else:
             print("Has ingresado una opción incorrecta. Intenta nuevamente.")
-
-def ShowProfile():
-    clear()
-    try:
-        with open('Proyecto/user.json') as f:
-            data = json.load(f)
-    except:
-        print('El archivo no fue encontrado')
-    print(f'Su edad es ---{data["edad"]}---\nSu genero es ---{data["genero"]}---\nSu altura es de ---{data["medida"]}---\nSu peso actual es de ---{data["peso_actual"]}---')
 
 def menu_gym():
     while True:

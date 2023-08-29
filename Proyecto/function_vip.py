@@ -42,7 +42,7 @@ def menu_nuevo_vip():
         print("="*functions.cant_caracter)
         print('¿Deseas conseguir VIP?'.center(functions.cant_caracter,' '))
         print("="*functions.cant_caracter)
-        print("[1] Si, quiero VIP")
+        print("[1] Si, quiero VIP --[2.99 Dolars per month]")
         print("[2] No, volver al menú")
         print("="*functions.cant_caracter)
         
