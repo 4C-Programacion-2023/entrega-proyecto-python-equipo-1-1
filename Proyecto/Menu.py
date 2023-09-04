@@ -1,27 +1,35 @@
 import functions, function_vip, vars_calors, index
 
 '''--------------------------------------'''
-def menu():
-    while True:    
 
+# Define una función llamada "menu" que muestra un menú de opciones al usuario.
+def menu():
+    while True:
+
+        # Imprime una línea de igual (=) que abarca el ancho de la pantalla definido en "functions.cant_caracter".
         print('='*functions.cant_caracter)
+
+        # Imprime "NutriFit" centrado en la pantalla, dentro de una línea de igual.
         print('NutriFit'.center(functions.cant_caracter,' '))
+
+        # Imprime otra línea de igual para separar.
         print('='*functions.cant_caracter)
+
+        # Muestra las opciones del menú numeradas.
         print('[1] Ingrese/Actualiza datos del usuario')
         print('[2] Empezar rutina de ejercicios')
         print('[3] Ver rutinas de ejercicio segun tu edad')
         print('[4] Ver Alimentacion recomendada segun tu edad ')
         print('[5] Ver seguimiento [VIP]')
         print('[6] Reproducir musica')
-        print('[7] Chat Bot - **** [En proceso]')
-        print('[8] Opciones VIP ')
-        print('[9] GYM adheridos')
-        print('[10] Salir')
-        
+        print('[7] Opciones VIP ')
+        print('[8] GYM adheridos')
+        print('[9] Salir')
 
-
+        # Solicita al usuario que ingrese una opción.
         opcion = int(input('>>>'))
 
+        # Maneja diferentes opciones según lo que ingrese el usuario.
         if opcion == 1:
             index.add()
         elif opcion == 2:
@@ -52,4 +60,5 @@ def menu():
             break
         else:
             print(f'La opcion que ingreso es invalida, por favor vuelva a ingresar una opcion')
+
 '''--------------------------------------'''
