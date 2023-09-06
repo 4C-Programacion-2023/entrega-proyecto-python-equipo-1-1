@@ -1,6 +1,4 @@
-Claro, aquí tienes el código con comentarios (`#`) agregados para explicar cada sección:
 
-```python
 import json, os, webbrowser, Menu, gym_fuctions, function_vip, index
 from pathlib import Path
 
@@ -108,9 +106,7 @@ def baja_intensidad():
 # Función para mostrar rutinas de ejercicios de alta intensidad
 def alta_intensidad():
     clear()
-    print('Elija la intensidada del ejercicio:\n[1] Baja\n[
-
-2] Media\n[3] Alta')
+    print('Elija la intensidada del ejercicio:\n[1] Baja\n[2] Media\n[3] Alta')
     opcion = int(input('<<<'))
     try:
         with open('Proyecto/ejercicios.json', 'r') as fff:
@@ -247,5 +243,3 @@ def menu_gym():
             print("Has ingresado una opción incorrecta. Intenta nuevamente.")
         
         input("\nPresiona cualquier tecla para continuar...")
-```
-
