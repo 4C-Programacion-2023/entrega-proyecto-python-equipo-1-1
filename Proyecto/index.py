@@ -71,8 +71,8 @@ def add():
                 genero = ultimafila[4]
             if genero.upper() not in generos:
                 genero = ''
-            with open('user.json', 'w') as f:
-                json.dump(user, f, indent=4, sort_keys=True)
+    with open('user.json', 'w') as f:
+        json.dump(user, f, indent=4, sort_keys=True)
             conn.execute( "UPDATE user SET edad = ?, peso = ?, medida = ?, genero= ? WHERE rowid = ?", ( edad, peso, medida, genero, ultimafila[0])) # Actualizar la última fila con los datos completados
     conn.commit()
     conn.close() # Cerrar la conexión a la base de datos
