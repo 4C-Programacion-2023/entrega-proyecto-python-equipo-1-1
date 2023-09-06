@@ -47,15 +47,12 @@ def menu():
             functions.musica_menu()
         elif opcion == 7:
             if function_vip.estado_vip == False:
-                print('Necesitas VIP para usar esta función')
-        elif opcion == 8:
-            if function_vip.estado_vip == False:
                 function_vip.menu_vip()
             elif function_vip.estado_vip == True:
                 function_vip.menu_exis_vip()
-        elif opcion == 9:
+        elif opcion == 8:
             functions.menu_gym()
-        elif opcion == 10:
+        elif opcion == 9:
             print('Gracias por usar nuestro programa y contar con nuestros servicios')
             break
         else:
