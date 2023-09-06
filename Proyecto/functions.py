@@ -27,13 +27,13 @@ def al_recom():
         print("Archivo no encontrado")
     
     print("Alimentación recomendada:\n(Puede variar dependiendo de cada persona)")
-    if data['edad'] <= 16:
+    if data <= 16:
         print(data_2["m_16"])
-    elif data['edad'] > 16 and data['edad'] <= 30:
+    elif data > 16 and data <= 30:
         print(data_2["m_30"])
-    elif data['edad'] > 30 and data['edad'] <= 65:
+    elif data > 30 and data <= 65:
         print(data_2["m_65"])
-    elif data['edad'] > 65:
+    elif data > 65:
         print(data_2["mm_65"])
 
 # Función para mostrar rutinas de ejercicios recomendadas en función de la edad
@@ -48,13 +48,13 @@ def ejercicios_recomendados_edad():
         print('El archivo no fue encontrado')
 
     print("Rutina de ejercicios recomendada:")
-    if data['edad'] <= 16:
+    if data <= 16:
         print(data_2["m_16"])
-    elif data['edad'] > 16 and data['edad'] <= 30:
+    elif data > 16 and data <= 30:
         print(data_2["m_30"])
-    elif data['edad'] > 30 and data['edad'] <= 65:
+    elif data > 30 and data <= 65:
         print(data_2["m_65"])
-    elif data['edad'] > 65:
+    elif data > 65:
         print(data_2["mm_65"])
 
 # Función para mostrar rutinas de ejercicios de intensidad media
